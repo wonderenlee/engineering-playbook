@@ -16,6 +16,14 @@ CONTRIBUTING.md	Detailed technical workflows & branching.	Developers
 Pull Request Templates	Standardized submission checklists.	Contributors / Reviewers
 Branch Protections	Automated safeguards for main and develop.	Security / DevOps
 
+| **Resource**           | **Purpose**                      | **Audience**        |
+|---------------------|-------------------------------|---------------------------------|
+| README.md        | High-level overview and setup.           | Everyone       |
+| CONTRIBUTING.md	        | Detailed technical workflows & branching.     | Developers        |
+| Pull Request Templates        | Standardized submission checklists.           | Contributors / Reviewers      |
+| Branch Protections        | Automated safeguards for `main` and `develop`.           | Security / DevOps      |
+
+
 ## 🚦 Operational Workflow (Branching Strategy)
 
 We utilize a structured branching model to isolate development work from production-ready code.
