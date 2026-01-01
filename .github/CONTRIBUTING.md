@@ -28,7 +28,7 @@ The repository includes the following key resources to guide contributors:
 - **[CONTRIBUTING.md](./.github/CONTRIBUTING.md)**: Supplies detailed contributions workflows, branching strategies, and testing instructions (this document). 
 - **[pull_request_template](./PULL_REQUEST_TEMPLATE.md)**: A standardized template to streamline and ensure consistent Pull Request submissions. 
 - **Branch Protections**: Enforces rules and best practices to maintain code quality, prevent unauthorized changes, and ensure consistent development workflows. It helps safeguard important branches, such as the `main` or `release` branches, from accidental deletion or direct, unreviewed commits.
- - To enable branch protections visit GitHub's official documentation on [Configuring branch protection rules](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/managing-a-branch-protection-rule).
+  - To enable branch protections visit GitHub's official documentation on [Configuring branch protection rules](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/managing-a-branch-protection-rule).
 
 ---
 
