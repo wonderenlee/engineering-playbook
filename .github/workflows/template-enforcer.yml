@@ -28,3 +28,15 @@ jobs:
             if (failed) {
                 core.setFailed(message);
             }
+
+                        if (branch.startsWith('bugfix/') && !body.includes('BUGFIX_VALIDATION_KEYWORD')) {
+                failed = true;
+                message = "❌ Error: Bugfix branches must use the Bugfix Template.";
+            } else if (branch.startsWith('feature/') && !body.includes('FEATURE_GOAL_KEYWORD')) {
+                failed = true;
+                message = "❌ Error: Feature branches must use the Feature Template.";
+            }
+
+            if (failed) {
+                core.setFailed(message);
+            }
