@@ -1,8 +1,7 @@
 # [Project Name]
 
 <!-- These badges are "Industry Gold Standard" for a healthy repository 
-Note:
-The Industry "Big Three" Explained
+Note:The Industry "Big Three" Explained
 
     Build Status (Reliability): This is non-negotiable. It proves the code actually compiles and passes the pytest suite you mentioned in your CONTRIBUTING.md. If this is red, the repo is considered "broken."
 
