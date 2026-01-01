@@ -206,7 +206,7 @@ Before opening a PR, verify that the following steps are complete:
 When opening a Pull Request, follow these steps:
 
 1. **Use the Pull Request Template** 
-   - All PRs must use the standardized template provided in `.github/[pull_request_template](./PULL_REQUEST_TEMPLATE.md)` that is automatically applied by GitHub.
+   - All PRs must use the standardized template provided in [pull_request_template.md](./PULL_REQUEST_TEMPLATE.md) that is automatically applied by GitHub.
   - Fill out all sections of the template (e.g., Description, Related Issues, Test Instructions). 
   - **Delete the "Usage Instructions" section** of the PR template before submitting.before submitting. 
 
@@ -247,7 +247,7 @@ When opening a Pull Request, follow these steps:
    # New dependencies have been added.
    # Run
    pip install -r requirements.txt
-   #to test locally
+   # to test locally
    ```
 
 - **Be Collaborative**:
@@ -444,12 +444,11 @@ Once updates to [CONTRIBUTING.md](./.github/CONTRIBUTING.md) are merged, **summa
   - Only include summaries or high-level overviews, with links back to [CONTRIBUTING.md](./.github/CONTRIBUTING.md)  for deeper detail.
 
    - **Examples**: 
-     - Updating a workflow summary in   [README.md](./README.md):
-       ```markdown
+     - Updating a workflow summary in [README.md](./README.md):
+       ``` markdown
        ## Branching Strategy 
-
        - **Bugfix Branches**: Used for fixing small, non-urgent coding issues. Branch off from `develop`. 
-         Detailed workflow: See [CONTRIBUTING.md](./.github/CONTRIBUTING.md). 
+       - Detailed workflow: See [CONTRIBUTING.md](./.github/CONTRIBUTING.md). 
        ```
 
 2. **Open a Pull Request for Review**: 
@@ -526,11 +525,10 @@ To ensure documentation remains consistent and accurate:
        ### Bugfix Branch Workflow (2023 Update):
        - Bugfix branches now branch off `develop` instead of `main`. 
        - Updated Workflow:
-         ```bash
-         git checkout develop
-         git pull origin develop
-         git checkout -b bugfix/fix-connection-issue
-         ```
+           git checkout develop
+           git pull origin develop
+           git checkout -b bugfix/fix-connection-issue
+       ```
    2. Summarize in  [README.md](./README.md):
        ```markdown
        ## Branching Strategy 
@@ -545,7 +543,7 @@ To ensure documentation remains consistent and accurate:
        - For detailed Git commands and examples, refer to [CONTRIBUTING.md](./.github/CONTRIBUTING.md).
        ```
    4. Communicate via Slack:
-       - Post in the team's Slack channel:
+      Post in the team's Slack channel:
          ```plaintext
          🚨 Branch Workflow Update 🚨 
          Team, we've updated the branching strategy for bugfix branches. 
