@@ -74,3 +74,6 @@ Example:
    - [ ] Bugfix tested on multiple datasets with timezone-aware datetime columns.
    - [ ] Added unit tests to cover the bugfix scenario.
    - [ ] Updated failing tests in 'test_datetime_parsing.py'. -->
+
+
+   bugfix_template.md: ``
