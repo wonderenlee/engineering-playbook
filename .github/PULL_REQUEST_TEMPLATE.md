@@ -26,7 +26,7 @@ Before submitting this PR, please ensure:
 
 <!-- Briefly describe what this PR does. 
 Example:
-   - "Adds a notebook for EDA of historic data." 
+   - Adds a notebook for EDA of historic data.
 -->
 
 
