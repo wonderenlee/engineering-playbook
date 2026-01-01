@@ -17,6 +17,7 @@ jobs:
             let failed = false;
             let message = "";
 
+            ## Added validation for hotfix template
             if (branch.startsWith('hotfix/') && !body.includes('HOTFIX_VALIDATION_KEYWORD')) {
                 failed = true;
                 message = "❌ Error: Hotfix branches must use the Hotfix Template.";
