@@ -1,5 +1,15 @@
 <!-- ⚠️ DELETE THIS ENTIRE SECTION BEFORE SUBMITTING THE PR ⚠️ -->
 
+### ⚠️ STOP: Select the Correct Template
+To ensure we follow our **Engineering Playbook**, please click the link that matches your branch type to reload this PR with the correct checklist:
+
+- [🚀 Feature PR](?expand=1&template=feature_template.md)
+- [🧪 Experiment PR](?expand=1&template=experiment_template.md)
+- [🐛 Bugfix PR](?expand=1&template=bugfix_template.md)
+- [🔥 Hotfix PR](?expand=1&template=hotfix_template.md)
+
+*If none of the above apply, continue following the steps below...*
+
 # Pull Request Template
 
 ## Usage Instructions
