@@ -8,7 +8,7 @@ jobs:
   check-template:
     runs-on: ubuntu-latest
     steps:
-      - name: Check for Template Compliance
+      - name: Validate Template Usage
         uses: actions/github-script@v6
         with:
           script: |
@@ -17,26 +17,31 @@ jobs:
             let failed = false;
             let message = "";
 
-            if (branch.startsWith('hotfix/') && !body.includes('HOTFIX_VALIDATION_KEYWORD')) {
+            // Mapping branch prefixes to their required hidden IDs
+            const rules = [
+              { prefix: 'feature/', id: 'FEATURE_TEMPLATE_v1', name: 'Feature' },
+              { prefix: 'experiment/', id: 'EXPERIMENT_TEMPLATE_v1', name: 'Experiment' },
+              { prefix: 'bugfix/', id: 'BUGFIX_TEMPLATE_v1', name: 'Bugfix' },
+              { prefix: 'hotfix/', id: 'HOTFIX_TEMPLATE_v1', name: 'Hotfix' },
+            ];
+
+            const activeRule = rules.find(r => branch.startsWith(r.prefix));
+
+            if (activeRule) {
+              if (!body.includes(activeRule.id)) {
                 failed = true;
-                message = "❌ Error: Hotfix branches must use the Hotfix Template.";
-            } else if (branch.startsWith('feature/') && !body.includes('FEATURE_GOAL_KEYWORD')) {
+                message = `❌ Error: This is a ${activeRule.name} branch. You must use the ${activeRule.name} Template link in the PR description to load the correct checklist.`;
+              }
+            } else {
+              // Optional: Rule for branches that don't follow the naming convention
+              if (body.length < 50) {
                 failed = true;
-                message = "❌ Error: Feature branches must use the Feature Template.";
+                message = "❌ Error: Please provide a detailed PR description using one of our engineering templates.";
+              }
             }
 
             if (failed) {
-                core.setFailed(message);
+              core.setFailed(message);
             }
 
-                        if (branch.startsWith('bugfix/') && !body.includes('BUGFIX_VALIDATION_KEYWORD')) {
-                failed = true;
-                message = "❌ Error: Bugfix branches must use the Bugfix Template.";
-            } else if (branch.startsWith('feature/') && !body.includes('FEATURE_GOAL_KEYWORD')) {
-                failed = true;
-                message = "❌ Error: Feature branches must use the Feature Template.";
-            }
-
-            if (failed) {
-                core.setFailed(message);
-            }
+            
