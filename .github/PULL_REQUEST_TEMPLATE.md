@@ -36,7 +36,7 @@ Before submitting this PR, please ensure:
 - [ ] Other: __________________
 
 
-## Key Changes Made 
+## Key Changes 
 <!-- List major changes. Example:
 1. Added an EDA notebook.
 2. Fixed NaN handling in regression code.
