@@ -1,0 +1,42 @@
+name: "PR Template Enforcer"
+
+on:
+  pull_request:
+    types: [opened, edited, synchronized]
+
+jobs:
+  check-template:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check for Template Compliance
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const body = context.payload.pull_request.body || "";
+            const branch = context.payload.pull_request.head.ref;
+            let failed = false;
+            let message = "";
+
+            if (branch.startsWith('hotfix/') && !body.includes('HOTFIX_VALIDATION_KEYWORD')) {
+                failed = true;
+                message = "❌ Error: Hotfix branches must use the Hotfix Template.";
+            } else if (branch.startsWith('feature/') && !body.includes('FEATURE_GOAL_KEYWORD')) {
+                failed = true;
+                message = "❌ Error: Feature branches must use the Feature Template.";
+            }
+
+            if (failed) {
+                core.setFailed(message);
+            }
+
+                        if (branch.startsWith('bugfix/') && !body.includes('BUGFIX_VALIDATION_KEYWORD')) {
+                failed = true;
+                message = "❌ Error: Bugfix branches must use the Bugfix Template.";
+            } else if (branch.startsWith('feature/') && !body.includes('FEATURE_GOAL_KEYWORD')) {
+                failed = true;
+                message = "❌ Error: Feature branches must use the Feature Template.";
+            }
+
+            if (failed) {
+                core.setFailed(message);
+            }
