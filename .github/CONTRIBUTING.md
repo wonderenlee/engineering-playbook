@@ -43,8 +43,8 @@ Ensure the following tools are installed:
 ### **2. Clone the Repository** 
 Run the following commands to download the repository to your local machine and navigate to the project directory: 
 ```bash
-git clone https://github.boozallencsn.com/RIIA-data-science/redbook-graph-rag.git
-cd redbook-graph-rag   
+git clone https://github.com/<REPO OWNER>/<REPO PROJECT>.git
+cd <REPO PROJECT>   
 ```
 
 #### Install dependencies: 
