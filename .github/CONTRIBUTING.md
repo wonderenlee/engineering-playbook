@@ -393,7 +393,7 @@ If you're blocked on contributing, please don’t hesitate to reach out to one o
 We are grateful to all the contributors who help maintain and improve this project! 
 
 - **Contributor List**: 
- You can view the full list of contributors [here](https://github.boozallencsn.com/RIIA-data-science/redbook-graph-rag/contributors). 
+ You can view the full list of contributors [here](https://github.com/<REPO_OWNER>/<REPO_NAME>/contributors). 
 
 #### **How to Become a Contributor**:
 1. Submit a meaningful Pull Request (PR) adhering to project guidelines. 
