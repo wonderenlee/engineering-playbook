@@ -54,14 +54,11 @@ Example:
 
 <!-- List major changes. 
 Example:
-   1. Added an EDA notebook.
-   2. Fixed NaN handling in regression code.
-   3. Updated README with testing instructions.
+   - Added an EDA notebook.
+   - Fixed NaN handling in regression code.
+   - Updated README with testing instructions.
 --> 
 
-1. 
-2. 
-3. 
 
 ## Testing Instructions 
 
