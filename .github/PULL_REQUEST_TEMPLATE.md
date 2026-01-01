@@ -84,7 +84,8 @@ Example:
 
 ## Screenshots (if applicable) 
 
-<!-- Add applicable screenshots: visualizations, tables, or graphs. Example:
+<!-- Add applicable screenshots: visualizations, tables, or graphs. 
+Example:
    - Screenshot: ![Feature Screenshot](example-screenshot.png)
 --> 
 
