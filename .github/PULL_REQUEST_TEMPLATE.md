@@ -62,7 +62,7 @@ Example:
 
 ## Testing Instructions 
 
-<!--  How was this tested Provide instructions for reviewers to manually reproduce, validate, or test this PR's changes. 
+<!--  Provide instructions for reviewers to manually reproduce, validate, or test this PR's changes. 
 Example:
    1. Run `scripts/run_tests.sh`.
    2. Verify accuracy of predictions from `model.py`
