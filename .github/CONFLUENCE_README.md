@@ -11,15 +11,15 @@ This project follows a Standardized Engineering Playbook designed to ensure code
 The project's "Source of Truth" is maintained in GitHub. Use the links below for deep dives into specific technical standards:
 
 Resource	Purpose	Audience
-README.md	High-level overview and setup.	Everyone
-CONTRIBUTING.md	Detailed technical workflows & branching.	Developers
+[README.md](/.github/README.md)	High-level overview and setup.	Everyone
+[CONTRIBUTING.md](/.github/CONTRIBUTING.md)	Detailed technical workflows & branching.	Developers
 Pull Request Templates	Standardized submission checklists.	Contributors / Reviewers
 Branch Protections	Automated safeguards for main and develop.	Security / DevOps
 
 | **Resource**           | **Purpose**                      | **Audience**        |
 |---------------------|-------------------------------|---------------------------------|
-| README.md        | High-level overview and setup.           | Everyone       |
-| CONTRIBUTING.md	        | Detailed technical workflows & branching.     | Developers        |
+| [README.md](/.github/README.md)        | High-level overview and setup.           | Everyone       |
+| [CONTRIBUTING.md](/.github/CONTRIBUTING.md)	        | Detailed technical workflows & branching.     | Developers        |
 | Pull Request Templates        | Standardized submission checklists.           | Contributors / Reviewers      |
 | Branch Protections        | Automated safeguards for `main` and `develop`.           | Security / DevOps      |
 
@@ -76,9 +76,9 @@ For managers and stakeholders outside the daily dev cycle:
 
 To avoid "Stale Documentation," we follow a strict update hierarchy:
 
-1. Technical Change → Update CONTRIBUTING.md (Source of Truth).
+1. Technical Change → Update [CONTRIBUTING.md](/.github/CONTRIBUTING.md) (Source of Truth).
 
-2. Process Change → Update README.md (Summary).
+2. Process Change → Update [README.md](/.github/README.md) (Summary).
 
 3. Governance Change → Update this Confluence Page (Management View).
 
@@ -86,7 +86,7 @@ To avoid "Stale Documentation," we follow a strict update hierarchy:
 
 If you encounter a roadblock:
 
-1. Consult the CONTRIBUTING.md for technical FAQs.
+1. Consult the [CONTRIBUTING.md](/.github/CONTRIBUTING.md) for technical FAQs.
 
 2. Post in `#dev-support` (Slack) for real-time troubleshooting.
 
