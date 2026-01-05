@@ -1,6 +1,6 @@
 # 📖 Project Playbook: [Project Name]
 
-Last Updated: October 2023 | Status: Active | Owner: [Name 2]
+Last Updated: [YYYY-MM-DD] | Status: [Active] | Owner: [Name]
 
 ## 🎯 Executive Summary
 
