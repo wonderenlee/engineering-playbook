@@ -303,7 +303,7 @@ Below are links to standardized templates for Pull Requests (PRs) and specific b
 - [Feature Branch Template](./.github/feature_template.md)
 - [Experimental Branch Template](./.github/experiment_template.md)
 - [Bugfix Branch Template](./.github/bugfix_template.md)
-- [Hotfix Branch Template](./.github/hotfix_template.md)
+- [Hotfix Branch Template](.github/PULL_REQUEST_TEMPLATE/hotfix_template.md)
 
 ---
 
