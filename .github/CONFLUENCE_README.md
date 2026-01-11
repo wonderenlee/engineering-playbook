@@ -1,6 +1,6 @@
 # 📖 Project Playbook: [Project Name]
 
-Last Updated: October 2023 | Status: Active | Owner: [Name 2]
+Last Updated: MONTH YYYY | Status: Active | Owner: [Name 1], [Name 2], [Name 3]
 
 ## 🎯 Executive Summary
 
@@ -11,7 +11,7 @@ This project follows a Standardized Engineering Playbook designed to ensure code
 The project's "Source of Truth" is maintained in GitHub. Use the links below for deep dives into specific technical standards:
 
 Resource	Purpose	Audience
-[README.md](/.github/README.md)	High-level overview and setup.	Everyone
+[README.md](/.github/README.md)	High-level overview and setup.Everyone
 [CONTRIBUTING.md](/.github/CONTRIBUTING.md)	Detailed technical workflows & branching.	Developers
 Pull Request Templates	Standardized submission checklists.	Contributors / Reviewers
 Branch Protections	Automated safeguards for main and develop.	Security / DevOps
@@ -78,7 +78,7 @@ To avoid "Stale Documentation," we follow a strict update hierarchy:
 
 1. Technical Change → Update [CONTRIBUTING.md](/.github/CONTRIBUTING.md) (Source of Truth).
 
-2. Process Change → Update [README.md](/.github/README.md) (Summary).
+2. Process Change → Update README.md (Summary).
 
 3. Governance Change → Update this Confluence Page (Management View).
 
